@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dela+Gothic+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3F2EF;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    padding: 2em 6.5em 2em 3.5em;
+    width: 80%;
+    background: #050303;
+    margin: 1rem auto;
+}
+
+.logo {
+    cursor: pointer;
+    height: 12vh;
+    width: 12vw;
+}
+
+.btn-1 {
+    background-color: #F8BA4D;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #f8bd59;
+    outline: none;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.btn-1:hover {
+    box-shadow: 2px 2px 4px #d99000, -2px -2px 4px #ffc140;
+    transform: translateY(-2px);
+}
