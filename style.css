@@ -72,7 +72,7 @@ header {
     box-sizing: border-box;
 }
 
-.title-1 {
+.title {
     font-family: 'Tektur', sans-serif;
     color: #ffffff;
     font-size: 5.5rem;
@@ -161,4 +161,76 @@ header {
     font-size: 1rem;
     line-height: 1.5;
     padding: 5px 5px 5px 5px;
+}
+
+.how-to-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.section-title {
+    font-family: 'Tektur', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #ba181b;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto auto 25px auto;
+}
+
+.steps-grid > .step:nth-child(4),
+.steps-grid > .step:nth-child(5) {
+    grid-column: span 1;
+    justify-self: center;
+}
+
+.step {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.step-number {
+    background-color: #ba181b;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.step-title {
+    font-family: 'Tektur', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.step-description {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555555;
+    text-align: justify;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
