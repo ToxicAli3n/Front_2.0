@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,40 +8,91 @@
 }
 
 body {
-    background-color: #F3F2EF;
+    background-color: #0b090a;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 100px;
-    padding: 2em 6.5em 2em 3.5em;
     width: 80%;
-    background: #050303;
     margin: 1rem auto;
 }
 
 .logo {
     cursor: pointer;
-    height: 12vh;
-    width: 12vw;
+    height: 15vh;
+    width: 15vw;
 }
 
-.btn-1 {
-    background-color: #F8BA4D;
-    border: none;
-    border-radius: 15px;
-    padding: 10px 20px;
-    font-family: 'Dela Gothic One', sans-serif;
-    font-size: 16px;
+.btn {
+    font-family: 'Tektur', cursive;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ba181b;
     color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #ba181b;
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 2px 2px 4px #f8bd59;
-    outline: none;
-    transition: box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
-.btn-1:hover {
-    box-shadow: 2px 2px 4px #d99000, -2px -2px 4px #ffc140;
+.btn:hover {
+    background-color: #ffffff;
+    color: #ba181b;
+    border: 2px solid #ba181b;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px);
 }
+
+.btn:active {
+    background-color: #a4161a;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+.intro-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.content-1 {
+    float: left;
+    padding: 10px 0 10px 0;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.title-1 {
+    font-family: 'Tektur', sans-serif;
+    color: #ffffff;
+    font-size: 5.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.subtitle-1 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.car {
+    float: right;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 15px;
+    height: auto;
+    object-fit: cover;
+}
+
