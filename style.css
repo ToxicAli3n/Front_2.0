@@ -301,3 +301,127 @@ header {
     color: #ccc;
 }
 
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        height: 8vh;
+        width: auto;
+    }
+
+    .intro-section {
+        width: 95%;
+        padding: 15px 0;
+    }
+
+    .content-1 {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+
+    .car {
+        display: none;
+    }
+
+    .blocks-1 {
+        flex-direction: column;
+    }
+
+    .block-1 {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .how-to-section {
+        padding: 40px 15px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        height: 10vh;
+        width: auto;
+    }
+
+    .intro-section {
+        width: 90%;
+    }
+
+    .content-1 {
+        width: 100%;
+    }
+
+    .car {
+        display: none;
+    }
+
+    .blocks-1 {
+        flex-direction: column;
+    }
+
+    .block-1 {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .how-to-section {
+        padding: 50px 20px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        height: 12vh;
+        width: auto;
+    }
+
+    .intro-section {
+        width: 85%;
+    }
+
+    .content-1 {
+        width: 50%;
+    }
+
+    .car {
+        display: block;
+    }
+
+    .blocks-1 {
+        flex-direction: row;
+    }
+
+    .block-1 {
+        width: 30%;
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .step {
+        width: auto;
+    }
+}
+
